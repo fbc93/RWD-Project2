@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>Alia Corns Web Site!</title>
+
+  <!-- favicon Link -->
+  <!-- <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"> -->
+
+  <!-- font-awesome CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+
+  <!-- Light-Box CSS -->
+  <link rel="stylesheet" href="../css/lib/jquery.lightbox-0.5.css">
+
+  <!-- Animate.CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../css/asset/main.css">
+
+
+</head>
+
+<body onload="initialize()">
+
+  <!-- Navi Area Start -->
+  <div class='navbar navbar-default navbar-fixed-top' id="navi">
+    <div class='container'>
+
+
+      <!-- Brand and mobile Button display -->
+      <div class='navbar-header'>
+
+        <!-- Mobile Button Start -->
+        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#gnb'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+
+        <!-- Site Logo Start -->
+        <h1><a href='#intro'><span>Alia</span> Corns</a></h1>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class='collapse navbar-collapse' id='gnb'>
+
+        <ul class='nav navbar-nav navbar-right'>
+          <li><a href='#intro'>HOME</a></li>
+          <li><a href='#about'>ABOUT</a></li>
+          <li><a href='#team'>TEAM</a></li>
+          <li><a href='#service'>SERVICE</a></li>
+          <li><a href='#skill'>SKILL</a></li>
+          <li><a href='#works'>WORKS</a></li>
+          <li><a href='#banner'>BANNER</a></li>
+          <li><a href='#contact'>CONTACT</a></li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </div>
+
+
+  <!-- Intro Area Start -->
+  <div id="intro">
+    <div class="container-fluid">
+
+      <!-- Text-box Area Start -->
+      <div class="text-box">
+        <h2>Create Web Developement</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam unde ipsum
+          ducimus ratione veritatis nesciunt rerum suscipit molestias quos. Quam cupiditate illum odio quaerat velit
+          facilis tenetur porro odit?</p>
+      </div>
+
+      <!-- Covervid Background Video -->
+      <div class="covervid-wrapper">
+        <video class="covervid-video" autoplay muted loop poster="../video/video-preview.png">
+          <source src="../video/video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+
+  </div>
+  </div> <!-- Intro Area End -->
+
+
+
+  <!-- About Area Start -->
+  <div id="about">
+    <div class="container">
+
+      <!-- Title Row -->
+      <div class="row title">
+        <div class="col-xs-12">
+          <h2>SOME WORDS <span>ABOUT US</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis id esse, itaque alias.</p>
+        </div>
+      </div>
+
+      <!-- Content Row -->
+      <div class="row content">
+
+        <!-- left-box -->
+        <div class="col-sm-6 col-md-6">
+          <img src="../images/lg/about-img.png" alt="회사소개 이미지"
+          data-sizes="l, m, s, xs" 
+          data-srcset="
+            ../images/lg/about-img.png,
+            ../images/md/about-img.png,
+            ../images/sm/about-img.png,
+            ../images/xs/about-img.png
+            ">
+        </div>
+
+        <!-- right-box -->
+        <div class="col-sm-6 col-md-6">
+          <h3>WHY WE ARE <span>THE BEST</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus rerum dicta, hic illum aliquid.
+            Ullam corporis dolor accusantium reprehenderit tempore.</p>
+
+          <ul>
+            <li><strong>Mission -</strong> We deliver uniqueness and quality</li>
+            <li><strong>Skills -</strong> Delivering fast and excellent results</li>
+            <li><strong>Clients -</strong> Satisfied clients thanks to our experience</li>
+          </ul>
+
+          <a href="#" class="btn btn-success">BROWSE OUR WORKS</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div> <!-- About Area End -->
+
+
+
+  <!-- Team Area Start -->
+  <div id="team">
+    <div class="container">
+
+      <!-- Title Row -->
+      <div class="row title">
+        <div class="col-xs-12">
+          <h2>MEET <span>OUR AWESOME TEAM</span></h2>
+        </div>
+      </div>
+
+
+      <!-- Content Row -->
+      <div class="row content">
+
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <img src="../images/lg/member-img1.png" alt="멤버이미지1"
+          data-sizes="l, m, s, xs" 
+          data-srcset="
+            ../images/lg/member-img1.png,
+            ../images/md/member-img1.png,
+            ../images/sm/member-img1.png,
+            ../images/xs/member-img1.png
+            ">
+          <div class="sns-group">
+            <a href="#"><i class='fa fa-user' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-twitter' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-google-plus' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-linkedin' aria-hidden='true'></i></a>
+          </div>
+          <h3>Anthony Doe <span>Web Designer</span></h3>
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <img src="../images/lg/member-img2.png" alt="멤버이미지2"
+          data-sizes="l, m, s, xs" 
+          data-srcset="
+            ../images/lg/member-img2.png,
+            ../images/md/member-img2.png,
+            ../images/sm/member-img2.png,
+            ../images/xs/member-img2.png
+            ">
+          <div class="sns-group">
+            <a href="#"><i class='fa fa-user' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-twitter' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-google-plus' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-linkedin' aria-hidden='true'></i></a>
+          </div>
+          <h3>Marshall Doe <span>Lead Developer</span></h3>
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <img src="../images/lg/member-img3.png" alt="멤버이미지3"
+          data-sizes="l, m, s, xs" 
+          data-srcset="
+            ../images/lg/member-img3.png,
+            ../images/md/member-img3.png,
+            ../images/sm/member-img3.png,
+            ../images/xs/member-img3.png
+            ">
+          <div class="sns-group">
+            <a href="#"><i class='fa fa-user' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-twitter' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-google-plus' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-linkedin' aria-hidden='true'></i></a>
+          </div>
+          <h3>Nick Everdeen <span>SEO spectialist</span></h3>
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <img src="../images/lg/member-img4.png" alt="멤버이미지4"
+          data-sizes="l, m, s, xs" 
+          data-srcset="
+            ../images/lg/member-img4.png,
+            ../images/md/member-img4.png,
+            ../images/sm/member-img4.png,
+            ../images/xs/member-img4.png
+            ">
+          <div class="sns-group">
+            <a href="#"><i class='fa fa-user' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-twitter' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-google-plus' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-linkedin' aria-hidden='true'></i></a>
+          </div>
+          <h3>Paul Shepherd <span>Web Designer</span></h3>
+        </div>
+
+      </div>
+
+    </div>
+  </div> <!-- Team Area End -->
+
+
+
+  <!-- Service Area Start -->
+  <div id="service">
+    <div class="container">
+
+      <!-- Title Row -->
+      <div class="row title">
+        <div class="col-xs-12">
+          <h2>TAKE A LOOK AT <span>OUR SERVICES</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis id esse, itaque alias.</p>
+        </div>
+      </div>
+
+
+      <!-- Content Row -->
+      <div class="row content">
+
+        <div class="col-xs-12">
+          <div class="icon"><i class='fa fa-desktop' aria-hidden='true'></i></div>
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore.</p>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="icon"><i class='fa fa-code' aria-hidden='true'></i></div>
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore.</p>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="icon"><i class='fa fa-paint-brush' aria-hidden='true'></i></div>
+          <h3>Graphic Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore.</p>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="icon"><i class='fa fa-building' aria-hidden='true'></i></div>
+          <h3>Architecture</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore.</p>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="icon"><i class='fa fa-camera' aria-hidden='true'></i></div>
+          <h3>Photography</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore.</p>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="icon"><i class='fa fa-android' aria-hidden='true'></i></div>
+          <h3>App Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore.</p>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="icon"><i class='fa fa-pencil' aria-hidden='true'></i></div>
+          <h3>Interior Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore.</p>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="icon"><i class='fa fa-laptop' aria-hidden='true'></i></div>
+          <h3>Ethical Hacking</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore.</p>
+        </div>
+
+      </div>
+    </div>
+  </div> <!-- Service Area End -->
+
+
+
+  <!-- Skill Area Start -->
+  <div id="skill">
+    <div class="container">
+
+      <!-- Title Row -->
+      <div class="row title">
+        <div class="col-xs-12">
+          <h2>SEE <span>OUR SKILLS</span></h2>
+        </div>
+      </div>
+
+      <!-- Content Row -->
+      <div class="row content">
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>HTML5</h3>
+          <div class="circle circle1"><strong></strong></div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>CSS3</h3>
+          <div class="circle circle2"><strong></strong></div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>JAVASCRIPT</h3>
+          <div class="circle circle3"><strong></strong></div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>JQUERY</h3>
+          <div class="circle circle4"><strong></strong></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div> <!-- Skill Area End -->
+
+
+
+  <!-- Works Area Start -->
+  <div id="works">
+    <div class="container">
+
+      <!-- Title Row -->
+      <div class="row title">
+        <div class="col-xs-12">
+          <h2>TAKE A LOOK AT <span>OUR WORKS</span></h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis id esse, itaque alias.</p>
+
+          <div class="g-menu">
+            <li><a href="#" id="m1" class="gmenu-act">Show All</a></li>
+            <li><a href="#" id="m2">Decelopement</a></li>
+            <li><a href="#" id="m3">Photography</a></li>
+            <li><a href="#" id="m4">Design</a></li>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Content Row -->
+      <div class="row content">
+        <div class="col-xs-12">
+
+
+          <div class="grid">
+            <div class="grid-item g1">
+              <img src="../images/lg/works-img1.png" alt="Work Image1"
+              data-sizes="l, m, s, xs" 
+              data-srcset="
+                ../images/lg/works-img1.png,
+                ../images/md/works-img1.png,
+                ../images/sm/works-img1.png,
+                ../images/xs/works-img1.png
+                ">
+            </div>
+            <div class="grid-item g2">
+              <img src="../images/lg/works-img2.png" alt="Work Image1"
+              data-sizes="l, m, s, xs" 
+              data-srcset="
+                ../images/lg/works-img2.png,
+                ../images/md/works-img2.png,
+                ../images/sm/works-img2.png,
+                ../images/xs/works-img2.png
+                ">
+            </div>
+            <div class="grid-item g3">
+              <img src="../images/lg/works-img3.png" alt="Work Image1"
+              data-sizes="l, m, s, xs" 
+              data-srcset="
+                ../images/lg/works-img3.png,
+                ../images/md/works-img3.png,
+                ../images/sm/works-img3.png,
+                ../images/xs/works-img3.png
+                ">
+            </div>
+            <div class="grid-item g1">
+              <img src="../images/lg/works-img4.png" alt="Work Image1"
+              data-sizes="l, m, s, xs" 
+              data-srcset="
+                ../images/lg/works-img4.png,
+                ../images/md/works-img4.png,
+                ../images/sm/works-img4.png,
+                ../images/xs/works-img4.png
+                ">
+            </div>
+            <div class="grid-item g2">
+              <img src="../images/lg/works-img5.png" alt="Work Image1"
+              data-sizes="l, m, s, xs" 
+              data-srcset="
+                ../images/lg/works-img5.png,
+                ../images/md/works-img5.png,
+                ../images/sm/works-img5.png,
+                ../images/xs/works-img5.png
+                ">
+            </div>
+            <div class="grid-item g3">
+              <img src="../images/lg/works-img6.png" alt="Work Image1"
+              data-sizes="l, m, s, xs" 
+              data-srcset="
+                ../images/lg/works-img6.png,
+                ../images/md/works-img6.png,
+                ../images/sm/works-img6.png,
+                ../images/xs/works-img6.png
+                ">
+            </div>
+            <div class="grid-item g1">
+              <img src="../images/lg/works-img7.png" alt="Work Image1"
+              data-sizes="l, m, s, xs" 
+              data-srcset="
+                ../images/lg/works-img7.png,
+                ../images/md/works-img7.png,
+                ../images/sm/works-img7.png,
+                ../images/xs/works-img7.png
+                ">
+            </div>
+            <div class="grid-item g2">
+              <img src="../images/lg/works-img8.png" alt="Work Image1"
+              data-sizes="l, m, s, xs" 
+              data-srcset="
+                ../images/lg/works-img8.png,
+                ../images/md/works-img8.png,
+                ../images/sm/works-img8.png,
+                ../images/xs/works-img8.png
+                ">
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- Works Area End -->
+
+  <!-- Banner Area Start -->
+  <div id="banner" class="jarallax">
+    <div class="container">
+
+      <div class="title">
+        <h2>CLIENTS LOVE <span>OUR WORKS</span></h2>
+        <img src="../images/lg/banner-img.png" alt="Banner Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ut, odit odio reiciendis possimus blanditiis
+          fugiat temporibus est delectus, rem accusantium tempora, officiis id earum laudantium repellendus molestiae
+          unde nobis.</p>
+          <h3>Robert Cool <span>CEO Smart Soft Group</span></h3>
+      </div>
+
+    </div>
+  </div> <!-- Banner Area End -->
+
+  <!-- Google Map Area Start -->
+  <div id="map_canvas"></div>
+  <!-- Google Map Area End -->
+
+  <!-- Contact Area Start -->
+  <div id="contact">
+    <div class="container">
+
+      <!-- Title Row -->
+      <div class="row title">
+        <div class="col-xs-12">
+          <h2>FEEL FREE TO <span>CONTACT US</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <!-- Content Row -->
+      <div class="row conent">
+        <div class="col-xs-12">
+
+          <form action="">
+            <div>
+              <div class="form-group">
+                <label for="input_name" class="sr-only">NAME : </label>
+                <input type="text" class="form-control wow fadeInRight" id="input_name" placeholder="Your Name"
+                  data-wow-delay="0.5s">
+              </div>
+              <div class="form-group">
+                <label for="input_email" class="sr-only">E-MAIL : </label>
+                <input type="email" class="form-control" id="input_email" placeholder="Your E-mail">
+              </div>
+              <div class="form-group">
+                <label for="input_phone" class="sr-only">PHONE : </label>
+                <input type="tel" class="form-control" id="input_phone" placeholder="Your Phone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="input_msg" class="sr-only">MESSAGE : </label>
+              <textarea name="messge" class="form-control" id="input_msg" cols="30" rows="10"></textarea>
+            </div>
+
+            <p><input type="submit" value="SUBMIT" class="btn btn-success" id="submit_btn"></p>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- Contact Area End -->
+
+
+
+  <!-- Footer Area Start -->
+  <div id="footer">
+    <div class="container">
+
+      <!-- SNS-Group -->
+      <div class="sns-group">
+        <a href="#">
+          <i class='fa fa-facebook-square' aria-hidden='true'></i>
+        </a>
+        <a href="#">
+          <i class='fa fa-twitter-square' aria-hidden='true'></i>
+        </a>
+        <a href="#">
+          <i class='fa fa-google-plus-square' aria-hidden='true'></i>
+        </a>
+        <a href="#">
+          <i class='fa fa-linkedin-square' aria-hidden='true'></i>
+        </a>
+        <a href="#">
+          <i class='fa fa-pinterest-square' aria-hidden='true'></i>
+        </a>
+      </div>
+
+      <!-- Copyrights -->
+      <p>Copyright &copy; 2021 ABC.com . All Rights Reserved.</p>
+
+    </div>
+  </div> <!-- Footer Area End -->
+
+  <!-- jQuery Insert -->
+  <script src="../js/asset/jquery-1.9.1.min.js"></script>
+
+  <!-- CoverVid JS -->
+  <script src="../js/lib/etc/covervid.min.js"></script>
+
+  <!-- Bootsrap JS -->
+  <script src="../js/lib/etc/bootstrap.min.js"></script>
+
+  <!-- Jarallax JS -->
+  <script src="../js/lib/etc/jarallax.min.js"></script>
+
+  <!-- ScrollMagic JS -->
+  <script src="../js/lib/scrollmagic/ScrollMagic.min.js"></script>
+  <script src="../js/lib/scrollmagic/TweenMax.min.js"></script>
+  <script src="../js/lib/scrollmagic/animation.gsap.min.js"></script>
+  <script src="../js/lib/etc/circle-progress.min.js"></script>
+  <script src="../js/lib/scrollmagic/debug.addIndicators.min.js"></script>
+
+  <!-- Gallery JS -->
+  <script src="../js/lib/gallery/isotope.pkgd.min.js"></script>
+  <script src="../js/lib/gallery/jquery.lightbox-0.5.min.js"></script>
+  <script src="../js/lib/gallery/gallery.js"></script>
+
+  <!-- ResponsiveImage JS -->
+  <script src="../js/lib/etc/responsiveimages.js"></script>
+
+  <!-- Map JS -->
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="../js/lib/etc/map.js"></script>
+
+  <!-- My JS -->
+  <script src="../js/asset/main.js"></script>
+
+
+
+</body>
+
+</html>

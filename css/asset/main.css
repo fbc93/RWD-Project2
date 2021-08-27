@@ -1,0 +1,866 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ******************* 레이아웃 구성시작 **************** */
+
+ 
+#intro{ height: 714px; }
+#map_canvas{ height: 357px; }
+#footer{ height: 105px; }
+
+.container{ padding: 105px 0; }
+#navi .container, #footer .container{ padding: 0; }
+
+#team .container,
+#skill .container{
+  overflow: hidden;
+}
+
+ 
+/* ******************* 공통영역 선언시작 **************** */
+ 
+body{ font-family: Arial, Helvetica, sans-serif; }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: transparent!important;
+  color:#7dcb3d!important;
+}
+
+/* Title Area Start */
+.title{ 
+  text-align: center; height: 126px; margin-bottom: 84px; 
+}
+.title h2{
+  height: 63px; 
+  font: 300 3.7rem/42px 'Roboto', sans-serif;
+  margin-bottom: 42px;
+  position: relative;
+}
+.title h2::after {
+  content: '';
+  display: block;
+  width: 125px;
+  height: 3px;
+  background-color: #8ec735;
+  position: absolute;
+  left: 50%;
+  top: 63px;
+  margin-left: -62px;
+}
+.title h2 span{
+  font-weight: 700;
+  color: #8ec735;
+}
+
+
+
+/* Jarallax CSS */
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#skill .title h2 {
+  font: 800 3.7rem/1.5 'Nanum Gothic',sans-serif;
+}
+
+/* Covervid CSS */
+.covervid-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#about .content h3 {
+  font: 3rem/1 'Nanum Gothic',sans-serif;
+  color:#333;
+  margin-bottom:42px;
+}
+#about .content span{
+  color:#7dcb3d;
+}
+#about .content p {
+  font: 1.4rem/21px 'Nanum Gothic',sans-serif;
+  color:#333;
+  margin-bottom:63px;
+}
+#about .content li {
+  font: 1.4rem/21px 'Nanum Gothic',sans-serif;
+  color:#333;
+  margin-bottom:21px;
+}
+#about .content strong{
+  font: 800 1.4rem/21px 'Nanum Gothic',sans-serif;
+}
+#about .content li:last-child{
+  margin-bottom:63px;
+}
+
+
+
+
+ 
+/* ******************* 개별영역 선언시작 **************** */
+
+/* **************** Navi Area Start ************** */
+#navi{ 
+  border-radius: 0;
+  border: 0;
+  height:64px;
+  padding:11px 0 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#navi h1 a, #navi #gnb a{ 
+  color: #fff; 
+  
+}
+
+/* Logo */
+#navi h1{
+  height:42px;
+  font: 700 1.8rem/42px 'Nanum Gothic', sans-serif;
+}
+#navi h1 span{
+  color: #8ec735;
+}
+
+/* Gnb */
+#navi #gnb a {
+  height:42px;
+  padding: 0 15px;
+  font: 400 1.4rem/42px 'Nanum Gothic', sans-serif;
+}
+#navi #gnb a:hover {
+color:#8ec735;
+}
+
+
+
+/* **************** Intro Area Start ************** */
+#intro{ position: relative; }
+#intro::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute; left: 0; top: 0;
+}
+
+/* text-box */
+.text-box{
+  width: 730px;
+  height: 126px;
+  color: #fff;
+  text-align: center;
+  z-index: 10;
+  position: absolute; left: 50%; top: 50%;
+  
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+
+  opacity:0;
+}
+
+
+.text-box h2{
+  height: 42px;
+  font: 700 4rem/1 'Nanum Gothic', sans-serif;
+  margin-bottom: 21px;
+}
+
+.text-box p { 
+  font: 1.5rem/21px 'Nanum Gothic', sans-serif;
+  width:660px;
+  margin:auto;
+  color:#e2e2e2;
+ }
+
+
+/* Covervid Background Video */
+#intro .covervid-wrapper{ overflow: hidden;  }
+#intro .covervid-video{ display: block; width: 100%;  }
+ 
+
+
+/* **************** About Area Start ************** */
+
+/* left-box Area Start */
+#about .left-box img{ width: 100%; height: 441px; }
+
+
+/* right-box Area Start */
+#about .right-box h3{
+  height: 42px;
+  margin-bottom: 21px;
+  font: 400 3rem/21px 'Nanum Gothic', sans-serif;
+  letter-spacing: -2px;
+}
+#about .right-box h3 span{
+  color: #8ec735;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-left: 5px;
+}
+
+#about .right-box p{
+  margin-bottom: 63px;
+  font-size: 1.6rem;
+}
+
+#about .right-box ul{ height: 105px; margin-bottom: 42px; }
+#about .right-box ul li{
+  height: 21px; 
+  line-height: 21px; 
+  margin-bottom: 21px; 
+  font-size: 1.6rem;
+}
+
+
+
+/* **************** Team Area Start ************** */
+#team{ background-color: #444749; color: #fff; overflow: hidden; }
+#team .title { height: 63px; }
+#team .content>div{ text-align: center; }
+#team .content>div img{ margin-bottom: 21px; position: relative;}
+#team .content>div .sns-group{ height: 42px; margin-bottom: 42px; }
+#team .content>div .sns-group a{
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #fff;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+#team .content>div h3{
+  height: 63px; 
+  font: bold 2.1rem/1.8 'Nanum Gothic', sans-serif;
+}
+#team .content>div h3 span{
+  display:block;
+  color:#999;
+  font: 400 1.4rem/10px 'Nanum Gothic',sans-serif;
+}
+
+#team .content>div .sns-group a:hover{
+  color:#8ec735;
+  border-color:#8ec735;
+}
+
+
+
+/* **************** Service Area Start ************** */
+#service .content{ text-align: center; }
+#service .content>div {
+  width: calc(25% - 16px);
+    border: 1px solid #8ec735;
+    margin: 0 21px 21px 0;
+    padding: 25px 20px;
+    border-radius: 7px;
+}
+#service .content>div:nth-child(4n){
+  margin-right:0;
+}
+
+#service .content>div .icon { 
+  font-size:4rem;
+  color:#8ec735; 
+  margin-bottom:21px;
+ }
+
+#service .content>div h3 {
+ height:21px;
+ font: 800 1.5rem/21px 'Nanum Gothic', sans-serif; 
+ margin-bottom:21px;
+}
+
+#service .content>div p{
+  font: 400 1.4rem/21px 'Nanum Gothic', sans-serif; 
+  color:#333;
+}
+
+/* **************** Skill Area Start ************** */
+#skill { background-color: #444749;  color:#fff; overflow: hidden;}
+#skill .title{ height:63px; }
+#skill .content>div { text-align: center; }
+#skill .content>div h3 { 
+  height:42px;
+  font: 400 2.4rem/21px 'Nanum Gothic', sans-serif;
+  margin-bottom:21px;
+ }
+ 
+#skill .content>div .circle { 
+  width:210px;
+  height:210px;
+  margin:auto;
+  position: relative;
+ }
+
+ /* Progress Circle */
+ #skill .content>div .circle strong{
+   position: absolute;
+   left:50%;top:50%;
+   -webkit-transform:translate(-50%,-50%);
+   -moz-transform:translate(-50%,-50%);
+   -o-transform:translate(-50%,-50%);
+   transform:translate(-50%,-50%);
+   font:400 2.2rem/1.5 'Nanum Gothic',sans-serif;
+ }
+
+ #works .title p {
+   font: 400 1.4rem/21px 'Nanum Gothic',sans-serif;
+   color:#333;
+ }
+
+ .grid-item:nth-child(n+5){
+   margin-bottom:0;
+ }
+
+
+/* **************** Work Area Start ************** */
+
+#works .title { height:231px; }
+#works .title p { margin-bottom:63px; }
+
+/* g-menu */
+#works .g-menu { height:42px; }
+#works .g-menu li { 
+  display:inline-block;
+  height: 100%;
+  margin: 0 15px;
+ }
+
+ /* g-menu 활성화 클래스 */
+ .gmenu-act { 
+   color:#fff!important;
+   background-color: #f35d18!important;
+  }
+
+#works .g-menu li a {
+display:block;
+width: 100%;
+height:42px;
+padding: 0 20px;
+font: 700 1.6rem/42px 'Nanum Gothic', sans-serif;
+background-color: #fc0;
+border: 1px solid #ccc;
+}
+
+#works .g-menu li a:hover {
+  color: #fff;
+  background-color: #f35d18;
+}
+
+
+/* light-box CSS Reset */
+#lightbox-container-image-data-box { 
+  box-sizing: content-box;
+ }
+
+
+
+
+/* **************** Banner Area Start ************** */
+
+#banner { 
+  text-align: center;
+  color:#fff;
+  height:672px;
+  background: url(../../images/lg/banner-bg.png) no-repeat 0 0;
+}
+  
+
+#banner .container{
+ height:100%;
+}
+
+#banner .title h2{
+  margin-bottom:0;
+}
+
+#banner img {
+  margin: 63px 0;
+}
+
+#banner p{
+  font: 400 1.4rem/21px 'Nanum Gothic',sans-serif;
+  color:#e2e2e2;
+}
+
+
+
+#banner .title {
+  height:63px;
+  margin-bottom:105px;
+}
+
+#banner p { margin-bottom:63px; }
+#banner h3 { 
+  height:42px;
+  font: 700 1.7rem/21px 'Nanum Gothic', sans-serif;
+ }
+#banner h3 span { 
+  display:block;
+  font-weight:400;
+  color:#e2e2e2;
+  line-height:30px;
+ }
+
+/* **************** Map Area Start ************** */
+
+/* **************** Contact Area Start ************** */
+#contact form>div{ 
+  display:flex;
+  justify-content: space-between;
+}
+#contact form>div>div { width:32%; }
+#contact form p { text-align: center; margin-top:63px; }
+#contact form #submit_btn{
+  width:190px;
+  height:42px;
+  text-align: center;
+  font: 400 1.6rem/21px 'Roboto', sans-serif;
+  border: 2px solid #8ec735;
+  color:#8ec735;
+  background-color: transparent;
+}
+#contact form #submit_btn:hover {
+  background-color: #7dcb3d;
+  color:#fff;
+}
+/* **************** Footer Area Start ************** */
+
+#footer { background-color: #7dcb3d; text-align: center; color:#fff; height:auto; }
+#footer .container { padding: 21px 0; }
+#footer .container p {margin:auto; } 
+#footer .container .sns-group { 
+  color:#fff;
+  font-size:3.4rem;
+  margin: 0 5px;
+ }
+ #footer .container .sns-group a { color:#fff; }
+ #footer .container .sns-group a:hover {
+   color:#fc0;
+ }
+
+
+ 
+ .grid-item {
+  width: 25%;
+  display:block;
+  margin-bottom: 30px;
+ }
+
+ .grid-item img{
+   display:block;
+   margin: 0 auto;
+ }
+
+ 
+ 
+
+
+ /* *******************  Media Query Start : 960 / 1024px **************** */
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 930px;
+}
+ 
+  .grid-item {
+    width: 25%;
+    display:block;
+    margin-bottom: 30px;
+   }
+
+   #about .content>div:last-child {
+    width: 48%;
+    float: right;
+   }
+
+   #about .content h3 {
+    margin-bottom: 42px;
+}
+
+#about .content li:last-child {
+  margin-bottom: 42px;
+}
+
+#about .content li{
+  margin-bottom:10px;
+}
+#about .content p{
+  margin-bottom:42px;
+}
+
+   #about .content>div:last-child h3{
+
+   }
+   
+   
+
+   #service .content>div:nth-child(4n){
+     margin-right:0;
+   }
+
+   #team .content>div img {
+    width: 80%;
+}
+   
+
+}
+
+
+/* *******************  Media Query Start : 중간대역 : (768px~959px) **************** */
+@media screen and (min-width:768px) and (max-width:959px) {
+  .container {
+    width: 100%;
+    padding: 105px 15px;
+  }
+
+  #about img{
+    width:100%;
+  }
+
+  #skill .content>div {
+    margin-bottom: 84px;
+}
+
+#skill .content>div:nth-child(n+3){
+  margin-bottom:0;
+}
+
+.grid-item:nth-child(5),
+.grid-item:nth-child(6){
+  margin-bottom: 30px;
+}
+.grid-item:nth-child(n+7) {
+  margin-bottom: 0;
+}
+
+  #about .content h3 {
+    margin-bottom: 21px;
+}
+#about .content p {
+  margin-bottom: 21px;
+}
+#about .content li:last-child {
+  margin-bottom: 21px;
+}
+
+#team .content>div .sns-group a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  line-height: 27px;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+#team .content>div .sns-group {
+  margin-bottom: 15px;
+}
+
+
+
+.grid-item {
+  display:block;
+  border: 1px solid #000;
+  margin-bottom: 30px;
+ }
+
+ #navi .container {
+  padding: 0 15px;
+}
+
+ .grid-item {
+  width:50%;
+ }
+ .grid-item img{
+   display:block;
+   width: calc(100% - 30px);
+ }
+
+ #service .content>div {
+  width: 47%;
+  border: 1px solid #8ec735;
+  margin: 0 21px 21px 0;
+  padding: 25px 20px;
+  border-radius: 7px;
+}
+
+#service .content>div:nth-child(2n){
+  margin-right:0;
+}
+
+#service .content>div {
+  width: calc(50% - 11px);
+  border: 1px solid #8ec735;
+  margin: 0 21px 21px 0;
+  padding: 25px 20px;
+  border-radius: 7px;
+}
+  
+}
+
+
+
+/* *******************  Media Query Start : 540 / 768px  **************** */
+@media screen and (max-width:767px) {
+  .container {
+    width:510px;
+  }
+
+  .title p{
+    margin-bottom:63px;
+  }
+  .navbar-toggle {
+    margin-top:4px;
+  }
+
+  .navbar-nav{
+    margin:0;
+   
+  }
+
+  #gnb {
+    width: 100%;
+    position: relative;
+    top: 7px;
+  }
+
+  #about .title p{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 63px;
+  }
+
+  #about .content li {
+    margin-bottom: 21px;
+}
+
+.title h2{
+  height:auto;
+}
+.title span{
+  display:block;
+  margin-top:42px;
+}
+
+#skill .title span {
+  display: block;
+  margin-top: 21px;
+}
+
+#skill .content>div {
+  margin-bottom: 84px;
+}
+
+#skill .content>div:nth-child(n+3){
+  margin-bottom:0;
+}
+
+  #about .content h3 {
+    margin: 42px 0;
+}
+
+  #about .content>div:last-child {
+    width: 100%;
+    float: none;
+}
+
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border:0;
+    background-color: #000000;
+  }
+
+  #navi .container{
+    width:100%;
+    height: 100%;
+    padding: 0 15px 0 30px;
+  }
+  #works .g-menu li {
+    display:block;
+    margin-bottom:10px;
+  }
+  #works .g-menu li:nth-child(4n){
+    margin-bottom:0;
+  }
+  #works .g-menu {
+    height: auto;
+    margin-bottom: 63px;
+}
+.grid-item {
+ width:50%;
+}
+.grid-item img{
+  display:block;
+  width: calc(100% - 30px);
+}
+
+#service .content>div {
+  width: 47%;
+  border: 1px solid #8ec735;
+  margin: 0 21px 21px 0;
+  padding: 25px 20px;
+  border-radius: 7px;
+}
+
+#service .content>div:nth-child(2n){
+  margin-right:0;
+}
+
+#service .content>div {
+  width: calc(50% - 11px);
+  border: 1px solid #8ec735;
+  margin: 0 21px 21px 0;
+  padding: 25px 20px;
+  border-radius: 7px;
+}
+
+#intro .text-box {
+  width:100%;
+}
+
+#skill .content>div,
+#team .content>div{
+  width:50%;
+}
+
+#intro .text-box p {
+  width: 70%;
+}
+
+#team .content>div:nth-child(1),
+#team .content>div:nth-child(2)
+{
+  margin-bottom:63px;
+}
+
+#service .content>div h3 {
+  font: 800 2rem/21px 'Nanum Gothic', sans-serif;
+}
+
+}
+
+
+/* *******************  Media Query Start : 480 / 480px  **************** */
+@media screen and (max-width:576px) {
+
+  #skill .content>div:nth-child(3){
+    margin-bottom:84px;
+  }
+
+  #about .content img{
+    width:100%;
+  }
+
+  #team .content>div h3 span{
+    line-height:21px;
+  }
+
+  #intro .text-box h2{
+    margin-bottom:63px;
+  }
+
+  .container{
+    padding: 105px 15px;
+  }
+
+  #works .container{
+    padding: 105px 0;
+  }
+
+  #team .content>div img {
+    width: 210px;
+}
+
+#team .content>div:nth-child(3){
+  margin-bottom:63px;
+}
+
+#team .content>div .sns-group {
+  margin-bottom: 21px;
+}
+
+#team .content>div img {
+  margin-bottom: 42px;
+}
+
+  .container { width:480px; }
+  .grid-item {
+    width: 100%;
+}
+
+#intro .text-box{
+  width:100%;
+}
+#service .content>div{
+  margin:0;
+}
+
+#service .content>div,
+#skill .content>div,
+#team .content>div{
+  width:100%;
+}
+
+#service .content>div {
+  margin-bottom:30px;
+}
+
+#contact form>div {
+  display: block;
+  width: 100%;
+}
+
+#contact form>div>div {
+  width:100%;
+}
+
+.title h2 span {
+  font-weight: 700;
+  color: #8ec735;
+  display: block;
+}
+
+#intro .text-box{
+  top: 45%;
+}
+
+#skill .title h2{
+  margin-bottom:84px;
+}
+
+.grid-item:nth-child(n+5){
+  margin-bottom:30px;
+}
+
+.grid-item:last-child{
+  margin-bottom:0;
+}
+
+}
